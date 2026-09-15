@@ -1,15 +1,90 @@
-[params.profileMode]
-  enabled = true
-  title = "Nagendra Gurram"
-  subtitle = "Exploring AI Infrastructure, Cybersecurity, and Agentic Systems."
-  imageUrl = "img/profile.jpg"
-  imageWidth = 150
-  imageHeight = 150
-  imageTitle = "Nagendra Gurram"
+baseURL = "https://nagendra-gurram.github.io/tech-blog/"
+title = "Nagendra Gurram"
+theme = "PaperMod"
+paginate = 5
+locale = "en-us"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  disableSpecial1stPost = true
+  ShowRssButtonInSectionTermList = true
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  description = "Deep dives into AI Infrastructure, Agentic Systems, Cybersecurity, and System Design."
+  keywords = ["AI", "Infrastructure", "Cybersecurity", "Agentic Systems", "System Design", "LLM"]
+  author = "Nagendra Gurram"
+
+  [params.homeInfoParams]
+    Title = "Hey, I'm Nagendra 👋"
+    Content = """
+Shipping scalable AI systems and exploring the intersections of **Agentic Systems**, **AI Infrastructure**, **Cybersecurity**, and **System Design**.
+
+I write about what I build, what breaks, and what I learn along the way.
+"""
+
+  [params.cover]
+    responsiveImages = true
+    linkFullImages = false
+    hiddenInList = false
+
+  [params.label]
+    text = "Nagendra Gurram"
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
 [[params.socialIcons]]
   name = "linkedin"
   url = "https://linkedin.com/in/nagendra-kumar-gurram"
+
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/nagendra-gurram"
+
+[[params.socialIcons]]
+  name = "rss"
+  url = "/index.xml"
+
+[[menu.main]]
+  name = "Articles"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  name = "Topics"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  name = "Archives"
+  url = "/archives/"
+  weight = 30
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 40
+
+[[menu.main]]
+  name = "🔍"
+  url = "/search/"
+  weight = 50
