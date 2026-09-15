@@ -1,4 +1,14 @@
-baseURL = 'https://nagendra-gurram.github.io/tech-blog/'
-locale = 'en-us'
-title = 'My New Hugo Project'
-theme = 'PaperMod'
+baseURL = "https://nagendra-gurram.github.io/tech-blog/"
+title = "Nagendra Gurram - Tech & AI Architecture"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  
+[profileMode]
+  enabled = true
+  title = "Nagendra Gurram"
+  subtitle = "Exploring AI Infrastructure, Cybersecurity, and Agentic Systems."
